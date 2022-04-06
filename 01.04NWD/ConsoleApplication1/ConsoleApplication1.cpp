@@ -4,14 +4,14 @@ int main()
 {
 	int a = 1;
 	int b = 1;
-	int mwd;
+	int nww;
 
 	cout << "Podaj a:";
 	cin >> a;
 	cout << "Podaj b:";
 	cin >> b;
 
-
+	int iloczyn = b * a;
 
 	while (a != b)
 	{
@@ -26,7 +26,9 @@ int main()
 
 
 	}
-	cout << "Najwiekszy --> " << a << endl;
+	nww = iloczyn / a;
 
+	cout << "Najwiekszy --> " << a << endl;
+	cout << "Nww to -->" << nww << endl;
 
 }
