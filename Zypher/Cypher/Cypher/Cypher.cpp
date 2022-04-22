@@ -1,15 +1,26 @@
 ﻿using namespace std;
 #include <iostream>
 
-void Funkcja1(tab[],klucz);
+void Funkcja1(char tab[],int klucz);
 
 int main()
 {
     int klucz;
     char tab[200];
-    int dl = strlen(tab);
-    
+   
+    cout << "Dawaj klucz" << endl;
+    cin >> klucz;
+    cout << "Dawaj słowo" << endl;
+    cin >> tab;
 
+    Funkcja1(tab, klucz);
+
+    cout <<"Slowo po kodowaniu --> " << tab;
+}
+
+void Funkcja1(char tab[], int klucz) {
+
+    int dl = strlen(tab);
 
 
     if (klucz < -26 && klucz > 26)
